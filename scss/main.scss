@@ -1,0 +1,160 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Variable+Font:wght@100..900&display=swap');
+
+$primary-color: #071f32;
+$account-color: #354bcf;
+$normal: 15px;
+$large: 18px;
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat Variable Font', 'Montserrat', sans-serif;
+  font-size: $normal;
+  font-weight: 400;
+  color: $primary-color;
+}
+
+a,
+li {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 77px;
+
+  background: #fff;
+  box-shadow: 0 2px 0 0 rgba(7, 31, 50, 0.1);
+
+  .logo {
+    height: 100%;
+    width: 150px;
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      padding: 0 10px;
+      margin-left: 30px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  }
+
+  nav {
+    width: 100%;
+    ul {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+
+      li {
+        height: 100%;
+        a {
+          font-size: $large;
+          font-weight: 600;
+          padding: 0 25px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+
+          &:hover {
+            box-shadow: inset 0 5px 0 0 $primary-color;
+          }
+        }
+
+        &:last-child {
+          margin-left: auto;
+
+          a {
+            color: $account-color;
+            padding-right: (32 + 25) * 1px;
+
+            &:hover {
+              box-shadow: inset 0 5px 0 0 $account-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: 26fr 55fr 24fr;
+  grid-column-gap: 3rem;
+
+  nav {
+    padding: 0 25px;
+
+    .shortcuts {
+      margin-top: 24px;
+      margin-bottom: 17px;
+      text-align: center;
+
+      h2 {
+        margin-bottom: 16px;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      &-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      &-button {
+        display: inline-block;
+        padding: 10px 14px;
+        background: #f4f3f3;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 700;
+      }
+
+      &-buttons {
+        li:last-child {
+          .shortcuts-button {
+            margin-top: 9px;
+            padding: 8px 10px;
+            background: none;
+            color: #e22c3f;
+            letter-spacing: 0.1em;
+            // font-size: 15px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .shortcut {
+      box-sizing: content-box;
+      border-top: 1.6px solid #f2f2f2;
+      width: 260px;
+      height: 56px;
+      padding: 17px 0 17px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
