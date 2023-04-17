@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!-- Metadonnées du site -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- Favicon du site -->
     <link
       rel="icon"
       type="image/png"
@@ -19,20 +20,25 @@
     />
     <title>Paris.fr, site officiel de la Ville de Paris</title>
 
+    <!-- Description du site pour les moteurs de recherche -->
     <meta
       name="description"
       content="Retrouvez tous les services et démarches, les infos pratiques, les actualités et événements de la Ville de Paris."
     />
 
+    <!-- Styles CSS -->
     <link href="css/main.min.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- En-tête du site -->
     <header>
       <div class="logo">
-        <a href="" aria-label="Accueil">
+        <!-- Lien vers la page d'accueil -->
+        <a href="/" aria-label="Accueil">
           <h1>PARIS</h1>
         </a>
       </div>
+      <!-- Menu principal -->
       <nav class="main-menu" aria-label="Menu principal">
         <ul>
           <li><a href="">Services</a></li>
@@ -40,23 +46,19 @@
           <li><a href="">Participez !</a></li>
           <li><a href="">Que faire à Paris ?</a></li>
           <li><a href="">Jeux 2024</a></li>
-          <li>
-            <a href="">Recherche</a>
-          </li>
-          <li>
-            <a href="">Mon Paris</a>
-          </li>
+          <li><a href="">Recherche</a></li>
+          <li><a href="">Mon Paris</a></li>
         </ul>
       </nav>
     </header>
+    <!-- Contenu principal du site -->
     <main>
+      <!-- Navigation secondaire -->
       <nav class="sub-navigation" aria-label="Navigation secondaire">
         <div class="shortcuts">
           <h2>Accès rapides</h2>
           <ul class="shortcuts-buttons">
-            <li>
-              <a class="shortcuts-button" href="">Piscines</a>
-            </li>
+            <li><a class="shortcuts-button" href="">Piscines</a></li>
             <li>
               <a class="shortcuts-button" href="">Parcs, jardins et bois</a>
             </li>
@@ -74,7 +76,9 @@
           <a href="">Travailler à Paris</a>
         </div>
       </nav>
-      <div class="main-content" role="main" aria-label="Actualités">
+
+      <!-- Section des actualités -->
+      <section class="main-content" role="main" aria-label="Actualités">
         <div class="featured" aria-label="À la une">
           <article>
             <a
@@ -102,7 +106,8 @@
             </a>
           </article>
         </div>
-      </div>
+      </section>
+      <!-- Section de droite avec agenda -->
       <aside class="right-aside" aria-label="Agenda">
         <ul class="telex">
           <li class="telex-item">
@@ -157,8 +162,37 @@
         </ul>
       </aside>
     </main>
+    <!-- Pied de page -->
     <footer>
       <!-- Contenu du pied de page -->
+      <header class="footer-header">
+        <a class="footer-header-logo" href="/" aria-label="Accueil">
+          <h2>PARIS</h2>
+        </a>
+      </header>
+      <div class="footer-extra">
+        <ul>
+          <li>
+            <a href=""><h3>Visit Paris</h3></a>
+          </li>
+          <li>
+            <a href=""><h3>Open Data</h3></a>
+          </li>
+          <li>
+            <a href=""><h3>Démarches</h3></a>
+          </li>
+        </ul>
+      </div>
+      <nav class="footer-nav" aria-label="Menu du pied de page">
+        <ul>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Presse</a></li>
+          <li><a href="">Mentions Légales</a></li>
+          <li><a href="">Accessibilité</a></li>
+          <li><a href="">Politique de cookies</a></li>
+          <li><a href="">Plan du site</a></li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
